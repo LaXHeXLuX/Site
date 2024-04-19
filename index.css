@@ -1,0 +1,33 @@
+body {
+    height: 90vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    background-color: chocolate;
+    padding: 5%;
+    border-radius: 15px;
+    border: 1px solid rgb(121, 68, 29);
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(108, 77, 55);
+}
+
+div {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    margin: 5px;
+    padding: 5px;
+    height: max-content;
+    border-radius: 10px;
+}
