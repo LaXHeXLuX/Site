@@ -37,3 +37,28 @@ NL: A lot of variants:
     One digit, dash (-), three letters, dash (-), two digits
     Two letters, dash (-), three digits, dash (-), one letter
     One letter, dash (-), three digits, dash (-), two letters
+NMK: Two letters indicating region, four digits, two letters
+N: Two letters, four to five digits
+PL: Two to three letters indicating region (too many regions, but first letter indicates larger district). Single digits can't be zero. Two variants:
+    Two letter region code, then two variants:
+        Three digits, two digits or digit and letter or two letters
+        One digit, one letter, one digit or letter, two digits
+    Three letter region code, then four variants:
+        One letter, one digit or letter, two digits
+        Two digits, one letter, one digit or letter
+        One digit, one letter, one digit or letter, one digit
+        Three digits, two digits or digit and letter or two letters
+P: Two variants:
+    (old) Two digits, two letters, two digits
+    (new) Two letters, two digits, two letters
+RO: Two letter country code, two digits, three letters (Can also be B, three digits, three letters)
+RSM: Blue characters, white background. One letter, one to four numbers
+SRB: Two letters indicating region, coat of arms, three or four digits, dash (-), two letters
+SK: Two letters indicating region, coat of arms, three digits, two letters
+SLO: Two letters indicating region, coat of arms, three digits, dash (-), two letters
+E: Four digits, three letters (consonants)
+S: Three letters, two digits, one digit or letter
+CH: Two letters indicating region, one to six digits
+UA: Two letters indicating region, four digits, two letters
+UK: Two letters indicating region (all letter combinations possible), two digits, three letters
+V: Letters CV, one to five digits
