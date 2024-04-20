@@ -1,0 +1,39 @@
+AL: Two letters, security hologram, three digits, two letters
+AND: One letter, four digits
+A: One or two letters, regional coat of arms or a dash (-), one to five digits, one to five letter sequence (Q excluded). The last two must add up to between 4 and 6 characters (included)
+BY: E (for electric) or a digit, three digits, two letter, dash (-), one digit
+B: Two standard variants - 
+    Three letters, a dot, and three digits
+    [1-2], dash (-), three letters, dash (-), three digits
+BIH: Three standard variants - 
+    Three digits, dash (-), letter, dash (-), three digits
+    Letter, two digits, dash (-), letter, dash (-), three digits
+    Two letters, dash (-), six digits
+BG: Usable letters: АВЕКМНОРСТYХ. One or two letters, four digits, two letters
+HR: Two letters, Croatian coat of arms, three or four digits, one or two letters
+CY: Three letters, four tiny digits indicating the month and year of the cars first registration, 3 digits
+CZ: One digit (not zero), one letter, one letter or digit, two weird decorative hexagons (red and green), one letter or digit, three digits  
+DK: Two letters, five digits
+EST: Three digits, three letters
+FIN: Three letters, dash (-), three digits
+F: Two letters, dash (-), three digits, dash (-), two letters
+D: One to three letters, two weird decorative circles (orange and grey), two letters, two to four digits
+GR: Three letters, dash (-), four digits
+H: Two letters, coat of arms, two letters, dash (-), three digits
+IS: Two letters, decorative square with number indicating year, a letter or a digit, two digits
+IRL: Two or three digits, dash (-), one or two letters, dash (-), one to six digits
+I: Two letters (not IOQU), three digits, two letters (not IOQU)
+LV: Two letters, dash (-), four digits
+FL: White characters on black background. Letters FL, coat of arms, four to five digits
+LT: Either coat of arms at the start or two weird decorative circles in the middle. Three letters, three digits
+L: Yellow background. Two letters, three to four digits
+M: Three letters, square dot, three digits
+MD: Three letters, two decorative circles in the middle on cars after 2015, three digits
+MC: Blue text on white background. Four digits or letters.
+MNE: Two letters indicating region, coat of arms, two letters, three digits
+NL: A lot of variants:
+    Two digits, dash (-), two letters, dash (-), two letters
+    Two digits, dash (-), three letters, dash (-), one digit
+    One digit, dash (-), three letters, dash (-), two digits
+    Two letters, dash (-), three digits, dash (-), one letter
+    One letter, dash (-), three digits, dash (-), two letters
