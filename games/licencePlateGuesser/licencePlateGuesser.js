@@ -37,7 +37,7 @@ function search(key, el) {
     console.log(el.value);
     let matches = [];
     for (const key in regexes) {
-        if (el.value.match('^' + regexes[key] + '$') != null) {
+        if (el.value.match('^(' + regexes[key] + ')$') != null) {
             matches.push(key);
         };
     };
