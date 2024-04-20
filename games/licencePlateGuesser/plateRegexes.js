@@ -45,7 +45,7 @@ export const regexes = {
     "NL": "((\d{2}[A-Z]{4})|(\d{2}[A-Z]{3}\d)|(\d[A-Z]{3}\d{2})|([A-Z]{2}\d{3}[A-Z])|([A-Z]\d{3}[A-Z]{2}))",
     "NMK": regionRules["NMK"] + "\d{4}[A-Z]{2}",
     "N": "[A-Z]{2}\d{4,5}",
-    //"PL": regionRules["PL"] + "[A-Z]{1,2}",
+    //"PL": regionRules["PL"] + "[A-Z]{1,2}",   TODO
     "P": "(\d{2}[A-Z]{2}\d{2}|[A-Z]{2}\d{2}[A-Z]{2})",
     "RO": "(" + regionRules["RO"] + "\d{2}[A-Z]{3}|B\d{3}[A-Z]{3})",
     "RSM": "[A-Z]\d{1,4}",
