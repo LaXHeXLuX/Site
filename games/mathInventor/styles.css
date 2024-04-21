@@ -1,0 +1,72 @@
+body {
+    height: 100%;
+}
+
+body > div {
+    width: 80%;
+    padding: 15px;
+}
+
+.math {
+    border: 2px dotted brown; 
+    color: brown;
+}
+
+.numbers {
+    font-weight: bold; 
+    color: chocolate;
+}
+
+.zero {
+    border: 2px dotted black; 
+    color: black;
+}
+
+.incrementor {
+    border: 2px dotted darkgreen; 
+    color: darkgreen;
+}
+
+h1 {
+    text-align: center;
+}
+
+#letsGetStarted {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.level {
+    border: 2px solid black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+    background-color: chocolate;
+}
+
+#gadgets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+.gadget {
+    cursor: pointer;
+    margin: 0;
+}
+
+p {
+    margin: 10px;
+}
+
+.task {
+    text-shadow: 0 0 3px gold;
+}
