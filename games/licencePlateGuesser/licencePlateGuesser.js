@@ -1,14 +1,9 @@
-import { regexes, country } from "./plateRegexes.js";
+import { regexes, country } from './plateRegexes.js';
+import { makeGrid, makeP, makeImg } from '../../commonTools.js'
 
-console.log('ola amigos');
-
-function clearPreviousElements() {
-    const previousGrid = document.getElementById('grid');
-    if (previousGrid != null) previousGrid.remove();
-    let previousP = document.getElementById('matches');
-    if (previousP != null) previousP.remove();
-    previousP = document.getElementById('noMatches');
-    if (previousP != null) previousP.remove();
+function clearPreviousResult() {
+    const oldResult = document.getElementById('result');
+    if (oldResult !== null) oldResult.remove();
 }
 
 function noMatches(plate) {
@@ -18,13 +13,13 @@ function noMatches(plate) {
     return p;
 }
 
-function makeGridElement(countryCode) {
+function makeGridElement(_i, countryCode) {
     const div = document.createElement('div');
     div.id = countryCode;
-    const p = document.createElement('p');
-    //p.tagName = 'countryName';
-    p.appendChild(document.createTextNode(country[countryCode]));
-    div.appendChild(p);
+
+    div.appendChild(makeP(country[countryCode]));
+    div.appendChild(makeImg('./plateImages/' + countryCode + '.png'));
+
     return div;
 }
 
@@ -33,18 +28,21 @@ function search(key, el) {
         return;
     }
 
-    clearPreviousElements();
-    console.log(el.value);
+    clearPreviousResult();
+    
     let matches = [];
     for (const key in regexes) {
         if (el.value.match('^(' + regexes[key] + ')$') != null) {
             matches.push(key);
         };
     };
-    console.log(matches);
+
+    const result = document.createElement('div');
+    result.id = 'result';
+    document.body.appendChild(result);
 
     if (matches.length == 0) {
-        document.body.appendChild(noMatches(el.value));
+        result.appendChild(noMatches(el.value));
         el.value = '';     
         return;
     }
@@ -52,16 +50,9 @@ function search(key, el) {
     const p = document.createElement('p');
     p.id = 'matches';
     p.appendChild(document.createTextNode('Matches for ' + el.value + ':'));
-    document.body.appendChild(p);
+    result.appendChild(p);
 
-    const newGrid = document.createElement('div');
-    newGrid.id = 'grid';
-
-    for (const i in matches) {
-        newGrid.appendChild(makeGridElement(matches[i]));
-    }
-
-    document.body.appendChild(newGrid);
+    result.appendChild(makeGrid(matches, makeGridElement));
     el.value = '';     
 }
 
