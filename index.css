@@ -1,5 +1,7 @@
 body {
-    height: 90vh;
+    margin: 0;
+    height: fit-content;
+    min-width: 300px;
     background-color: bisque;
     display: flex;
     flex-direction: column;
@@ -21,8 +23,8 @@ div {
     margin: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 input[type=text] {
@@ -34,5 +36,42 @@ input[type=text] {
 
 #grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    width: 100%;
+    max-width: 900px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+@media screen and (max-width: 1000px) {
+    #grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 700px) {
+    #grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#grid > * {
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    text-align: center;
 }
