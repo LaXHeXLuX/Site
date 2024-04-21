@@ -1,0 +1,17 @@
+{
+    "licencePlateGuesser": {
+        "name": "Licence plate guesser",
+        "color": "Chocolate",
+        "secondary-color": "Maroon"
+    },
+    "mathInventor": {
+        "name": "Math Inventor",
+        "color": "AliceBlue",
+        "secondary-color": "DarkSlateGray"
+    },
+    "createYouPerfectSocialMedia": {
+        "name": "Create Your Perfect Social Media",
+        "color": "Orange",
+        "secondary-color": "SaddleBrown"
+    }
+}
