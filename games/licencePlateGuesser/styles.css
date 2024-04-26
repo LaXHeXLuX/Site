@@ -11,3 +11,10 @@ div {
     border-radius: 5px;
     background-color: rgba(210, 105, 30, 0.6);
 }
+
+.countryLicencePlateDetails {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}

@@ -13,12 +13,27 @@ function noMatches(plate) {
     return p;
 }
 
+function createDetailBoxInFront(countryCode) {
+    console.log('creating: ' + countryCode);
+    const div = document.createElement('div');
+    div.className = 'countryLicencePlateDetails';
+    div.addEventListener('click', () => {div.remove()});
+
+    const p = document.createElement('p');
+    p.innerHTML = countryCode;
+    div.appendChild(p);
+
+    document.body.appendChild(div);
+}
+
 function makeGridElement(_i, countryCode) {
     const div = document.createElement('div');
     div.id = countryCode;
 
     div.appendChild(makeP(country[countryCode]));
     div.appendChild(makeImg('./plateImages/' + countryCode + '.png'));
+
+    div.addEventListener('click', () => createDetailBoxInFront(countryCode));
 
     return div;
 }
