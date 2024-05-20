@@ -27,6 +27,11 @@ body > div {
     color: darkgreen;
 }
 
+.plus {
+    border: 2px dotted darkorange; 
+    color: darkorange;
+}
+
 h1 {
     text-align: center;
 }
@@ -36,6 +41,7 @@ h1 {
     cursor: pointer;
     border: 1px solid black;
     border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .level {
