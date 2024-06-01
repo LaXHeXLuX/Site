@@ -12,7 +12,7 @@ BIH: Three standard variants -
 BG: Usable letters: АВЕКМНОРСТYХ. One or two letters, four digits, two letters
 HR: Two letters, Croatian coat of arms, three or four digits, one or two letters
 CY: Three letters, four tiny digits indicating the month and year of the cars first registration, 3 digits
-CZ: One digit (not zero), one letter, one letter or digit, two weird decorative hexagons (red and green), one letter or digit, three digits  
+CZ: One digit (not zero), one letter, one letter or digit, two weird decorative hexagons (red and green), one letter or digit, three digits
 DK: Two letters, five digits
 EST: Three digits, three letters
 FIN: Three letters, dash (-), three digits
@@ -29,7 +29,7 @@ LT: Either coat of arms at the start or two weird decorative circles in the midd
 L: Yellow background. Two letters, three to four digits
 M: Three letters, square dot, three digits
 MD: Three letters, two decorative circles in the middle on cars after 2015, three digits
-MC: Blue text on white background. Four digits or letters.
+MC: Blue text on white background. Four digits or letters
 MNE: Two letters indicating region, coat of arms, two letters, three digits
 NL: A lot of variants:
     Two digits, dash (-), two letters, dash (-), two letters
