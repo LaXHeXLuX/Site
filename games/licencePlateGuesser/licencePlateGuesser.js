@@ -1,4 +1,4 @@
-import { regexes, country } from './plateRegexes.js';
+import { regexes, country, countryDescriptions } from './plateRegexes.js';
 import { makeGrid, makeP, makeImg } from '../../commonTools.js'
 
 function clearPreviousResult() {
@@ -24,6 +24,10 @@ function createDetailBoxInFront(countryCode) {
     title.innerHTML = country[countryCode];
     detailsDiv.appendChild(title);
 
+    const description = document.createElement('p');
+    description.innerHTML = countryDescriptions[countryCode];
+    detailsDiv.appendChild(description);
+
     detailsBackground.appendChild(detailsDiv);
     detailsDiv.addEventListener('click', () => {detailsBackground.remove()});
 
@@ -42,6 +46,17 @@ function makeGridElement(_i, countryCode) {
     return div;
 }
 
+function getMatches(el) {
+    let matches = [];
+    for (const key in regexes) {
+        if (el.value.match('^(' + regexes[key] + ')$') != null) {
+            matches.push(key);
+        };
+    };
+
+    return matches;
+}
+
 function search(key, el) {
     if (key !== 'Enter') {
         return;
@@ -49,12 +64,7 @@ function search(key, el) {
 
     clearPreviousResult();
     
-    let matches = [];
-    for (const key in regexes) {
-        if (el.value.match('^(' + regexes[key] + ')$') != null) {
-            matches.push(key);
-        };
-    };
+    const matches = getMatches(el);
 
     const result = document.createElement('div');
     result.id = 'result';

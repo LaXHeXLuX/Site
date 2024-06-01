@@ -106,3 +106,70 @@ export const country = {
     "UK": "United Kingdom",
     "V": "Vatican City"
 }
+
+export const countryDescriptions = {
+    "AL": "Two letters, security hologram, three digits, two letters",
+    "AND": "One letter, four digits",
+    "A": "One or two letters, regional coat of arms or a dash (-), one to five digits, one to five letter sequence (Q excluded). The last two must add up to between 4 and 6 characters (included)",
+    "BY": "E (for electric) or a digit, three digits, two letter, dash (-), one digit",
+    "B": `Two standard variants - 
+    Three letters, a dot, and three digits
+    [1-2], dash (-), three letters, dash (-), three digits`,
+    "BIH": `Three standard variants - 
+    Three digits, dash (-), letter, dash (-), three digits
+    Letter, two digits, dash (-), letter, dash (-), three digits
+    Two letters, dash (-), six digits`,
+    "BG": "Usable letters: АВЕКМНОРСТYХ. One or two letters, four digits, two letters",
+    "HR": "Two letters, Croatian coat of arms, three or four digits, one or two letters",
+    "CY": "Three letters, four tiny digits indicating the month and year of the cars first registration, 3 digits",
+    "CZ": "One digit (not zero), one letter, one letter or digit, two weird decorative hexagons (red and green), one letter or digit, three digits",
+    "DK": "Two letters, five digits",
+    "EST": "Three digits, three letters",
+    "FIN": "Three letters, dash (-), three digits",
+    "F": "Two letters, dash (-), three digits, dash (-), two letters",
+    "D": "One to three letters, two weird decorative circles (orange and grey), two letters, two to four digits",
+    "GR": "Three letters, dash (-), four digits",
+    "H": "Two letters, coat of arms, two letters, dash (-), three digits",
+    "IS": "Two letters, decorative square with number indicating year, a letter or a digit, two digits",
+    "IRL": "Two or three digits, dash (-), one or two letters, dash (-), one to six digits",
+    "I": "Two letters (not IOQU), three digits, two letters (not IOQU)",
+    "LV": "Two letters, dash (-), four digits",
+    "FL": "White characters on black background. Letters FL, coat of arms, four to five digits",
+    "LT": "Either coat of arms at the start or two weird decorative circles in the middle. Three letters, three digits",
+    "L": "Yellow background. Two letters, three to four digits",
+    "M": "Three letters, square dot, three digits",
+    "MD": "Three letters, two decorative circles in the middle on cars after 2015, three digits",
+    "MC": "Blue text on white background. Four digits or letters",
+    "MNE": "Two letters indicating region, coat of arms, two letters, three digits",
+    "NL": `A lot of variants:
+    Two digits, dash (-), two letters, dash (-), two letters
+    Two digits, dash (-), three letters, dash (-), one digit
+    One digit, dash (-), three letters, dash (-), two digits
+    Two letters, dash (-), three digits, dash (-), one letter
+    One letter, dash (-), three digits, dash (-), two letters`,
+    "NMK": "Two letters indicating region, four digits, two letters",
+    "N": "Two letters, four to five digits",
+    "PL": `Two to three letters indicating region (too many regions, but first letter indicates larger district). Single digits can't be zero. Two variants:
+    Two letter region code, then two variants:
+        Three digits, two digits or digit and letter or two letters
+        One digit, one letter, one digit or letter, two digits
+    Three letter region code, then four variants:
+        One letter, one digit or letter, two digits
+        Two digits, one letter, one digit or letter
+        One digit, one letter, one digit or letter, one digit
+        Three digits, two digits or digit and letter or two letters`,
+    "P": `Two variants:
+    (old) Two digits, two letters, two digits
+    (new) Two letters, two digits, two letters`,
+    "RO": "Two letter country code, two digits, three letters (Can also be B, three digits, three letters)",
+    "RSM": "Blue characters, white background. One letter, one to four numbers",
+    "SRB": "Two letters indicating region, coat of arms, three or four digits, dash (-), two letters",
+    "SK": "Two letters indicating region, coat of arms, three digits, two letters",
+    "SLO": "Two letters indicating region, coat of arms, three digits, dash (-), two letters",
+    "E": "Four digits, three letters (consonants)",
+    "S": "Three letters, two digits, one digit or letter",
+    "CH": "Two letters indicating region, one to six digits",
+    "UA": "Two letters indicating region, four digits, two letters",
+    "UK": "Two letters indicating region (all letter combinations possible), two digits, three letters",
+    "V": "Letters CV, one to five digits"
+}
