@@ -14,16 +14,20 @@ function noMatches(plate) {
 }
 
 function createDetailBoxInFront(countryCode) {
-    console.log('creating: ' + countryCode);
-    const div = document.createElement('div');
-    div.className = 'countryLicencePlateDetails';
-    div.addEventListener('click', () => {div.remove()});
+    const detailsBackground = document.createElement('div');
+    detailsBackground.className = 'detailsBackground';
 
-    const p = document.createElement('p');
-    p.innerHTML = countryCode;
-    div.appendChild(p);
+    const detailsDiv = document.createElement('div');
+    detailsDiv.className = 'countryLicencePlateDetails';
 
-    document.body.appendChild(div);
+    const title = document.createElement('p');
+    title.innerHTML = country[countryCode];
+    detailsDiv.appendChild(title);
+
+    detailsBackground.appendChild(detailsDiv);
+    detailsDiv.addEventListener('click', () => {detailsBackground.remove()});
+
+    document.body.appendChild(detailsBackground);
 }
 
 function makeGridElement(_i, countryCode) {
