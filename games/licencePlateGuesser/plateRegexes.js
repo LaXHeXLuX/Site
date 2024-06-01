@@ -93,7 +93,7 @@ export const country = {
     "NMK": "North Macedonia",
     "N": "Norway",
     "PL": "Poland",
-    "P": "Protugal",
+    "P": "Portugal",
     "RO": "Romania",
     "RSM": "San Marino",
     "SRB": "Serbia",
