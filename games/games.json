@@ -9,9 +9,14 @@
         "color": "AliceBlue",
         "secondary-color": "DarkSlateGray"
     },
-    "createYouPerfectSocialMedia": {
-        "name": "Create Your Perfect Social Media",
-        "color": "Orange",
-        "secondary-color": "SaddleBrown"
+    "weather": {
+        "name": "Weather",
+        "color": "CornflowerBlue",
+        "secondary-color": "DarkBlue"
+    },
+    "projectEuler": {
+        "name": "ProjectEuler",
+        "color": "CornflowerBlue",
+        "secondary-color": "DimGray"
     }
 }
