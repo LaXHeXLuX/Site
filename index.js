@@ -1,4 +1,4 @@
-import { makeGrid, makeP } from './commonTools.js'
+import { makeGrid, makeP } from 'commonTools.js'
 
 async function fetchJSONData(path) {
     const response = await fetch(path);
@@ -10,7 +10,7 @@ console.log(jsonVariable); // Now you have the JSON object as a variable
 
 function makeGridElement(id, jsonObject) {
     const element = document.createElement('a');
-    element.href = './games/' + id + '/' + id + '.html';
+    element.href = 'games/' + id + '/' + id + '.html';
     element.className = 'game';
     element.id = id;
     element.style.backgroundColor = jsonObject['color'];
