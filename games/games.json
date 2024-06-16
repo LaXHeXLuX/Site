@@ -18,5 +18,10 @@
         "name": "ProjectEuler",
         "color": "rgb(55,55,55)",
         "secondary-color": "Sienna"
+    },
+    "runCode": {
+        "name": "Math Noise",
+        "color": "rgb(20,20,20)",
+        "secondary-color": "Gainsboro"
     }
 }

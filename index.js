@@ -5,8 +5,7 @@ async function fetchJSONData(path) {
     return response.json();
 }
 
-const jsonVariable = await fetchJSONData('./games/games.json');
-console.log(jsonVariable); // Now you have the JSON object as a variable
+const games = await fetchJSONData('./games/games.json');
 
 function makeGridElement(id, jsonObject) {
     const element = document.createElement('a');
@@ -14,9 +13,10 @@ function makeGridElement(id, jsonObject) {
     element.className = 'game';
     element.id = id;
     element.style.backgroundColor = jsonObject['color'];
+    element.style.borderColor = jsonObject['secondary-color'];
 
     const p = document.createElement('p');
-    p.innerHTML = jsonObject['name'];
+    p.innerText = jsonObject['name'];
     p.style.color = jsonObject['secondary-color'];
     element.appendChild(p);
     return element;
@@ -26,4 +26,4 @@ function addGames(gamesJSON) {
     document.body.appendChild(makeGrid(gamesJSON, makeGridElement));
 }
 
-addGames(jsonVariable);
+addGames(games);
