@@ -16,7 +16,7 @@
     },
     "projectEuler": {
         "name": "ProjectEuler",
-        "color": "DimGray",
+        "color": "rgb(55,55,55)",
         "secondary-color": "Sienna"
     }
 }
