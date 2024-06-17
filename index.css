@@ -51,17 +51,17 @@ input[type=text] {
     }
 }
 
+#grid > * {
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px;
+}
+
 a {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-
-#grid > * {
-    border-radius: 15px;
-    padding: 15px;
-    margin: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {

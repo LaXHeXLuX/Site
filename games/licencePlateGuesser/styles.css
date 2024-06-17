@@ -10,6 +10,7 @@ div {
     aspect-ratio: 1.7;
     border-radius: 5px;
     background-color: rgba(210, 105, 30, 0.6);
+    cursor: pointer;
 }
 
 .countryLicencePlateDetails {
@@ -23,6 +24,7 @@ div {
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+    cursor: pointer;
 }
 
 .detailsBackground {
