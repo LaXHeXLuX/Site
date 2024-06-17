@@ -23,5 +23,10 @@
         "name": "Math Noise",
         "color": "rgb(20,20,20)",
         "secondary-color": "Gainsboro"
+    },
+    "random": {
+        "name": "Random",
+        "color": "Gold",
+        "secondary-color": "Orange"
     }
 }

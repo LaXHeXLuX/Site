@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="random.js "></script>
+</head>
+<body>
+    <h1>Some random for you:</h1>
+    <div id="grid">
+        <div class="random" id="flipCoin">
+            <p>Click on coin to flip:</p>
+            <div id="coin">
+                <div class="side-a">
+                    <img src="./coinFlip/heads.png" alt="H">
+                </div>
+                <div class="side-b">
+                    <img src="./coinFlip/tails.png" alt="T">
+                </div>
+            </div>
+            <p id="coinFlipResult">&nbsp;</p>
+        </div>
+        <div class="random" id="rollDie">
+            <input type="text" id="rollDieInput" placeholder="Amount of dice">
+            <button id="rollDieButton">Roll dice!</button>
+            <div id="rollDieResult">
+                
+            </div>
+        </div>
+        <div class="random" id="pickNumber">
+            
+        </div>
+        <div class="random" id="drawCard">
+
+        </div>
+    </div>
+</body>
+</html>
