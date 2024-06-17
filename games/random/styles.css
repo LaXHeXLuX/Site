@@ -8,6 +8,13 @@
     padding: 2%;
     margin: 0;
     background-color: antiquewhite;
+    justify-content: start;
+}
+
+input[type=text] {
+    width: 100px;
+    border-radius: 2px;
+    padding: 2px;
 }
 
 /*COIN FLIP*/
@@ -39,6 +46,9 @@
 #coin.tails {
     animation: flipTails 2.5s ease-out forwards;
 }
+#coin.side {
+    animation: flipSide 5s ease-out forwards;
+}
   
 @keyframes flipHeads {
     from { transform: rotateY(0); }
@@ -48,9 +58,22 @@
     from { transform: rotateY(0); }
     to { transform: rotateY(1980deg); }
 }
+@keyframes flipSide {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(1891deg); }
+}
   
 /*ROLL DIE*/
 
 #rollDieResult {
     height: 50%;
 }
+
+/*PICK NUMBER*/
+
+#pickNumberResult > * {
+    padding: 0;
+    margin: 0;
+}
+
+/*DRAW CARD*/
