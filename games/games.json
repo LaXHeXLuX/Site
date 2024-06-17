@@ -9,9 +9,24 @@
         "color": "AliceBlue",
         "secondary-color": "DarkSlateGray"
     },
-    "createYouPerfectSocialMedia": {
-        "name": "Create Your Perfect Social Media",
-        "color": "Orange",
-        "secondary-color": "SaddleBrown"
+    "weather": {
+        "name": "Weather",
+        "color": "CornflowerBlue",
+        "secondary-color": "DarkBlue"
+    },
+    "projectEuler": {
+        "name": "ProjectEuler",
+        "color": "rgb(55,55,55)",
+        "secondary-color": "Sienna"
+    },
+    "runCode": {
+        "name": "Math Noise",
+        "color": "rgb(20,20,20)",
+        "secondary-color": "Gainsboro"
+    },
+    "random": {
+        "name": "Random",
+        "color": "Gold",
+        "secondary-color": "Orange"
     }
 }

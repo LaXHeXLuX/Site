@@ -21,11 +21,11 @@ function createDetailBoxInFront(countryCode) {
     detailsDiv.className = 'countryLicencePlateDetails';
 
     const title = document.createElement('p');
-    title.innerHTML = country[countryCode];
+    title.innerText = country[countryCode];
     detailsDiv.appendChild(title);
 
     const description = document.createElement('p');
-    description.innerHTML = countryDescriptions[countryCode];
+    description.innerText = countryDescriptions[countryCode];
     detailsDiv.appendChild(description);
 
     detailsBackground.appendChild(detailsDiv);
