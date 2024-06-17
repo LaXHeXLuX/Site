@@ -1,4 +1,4 @@
-/*COIN FLIP*/
+/*FLIP COIN*/
 const coin = document.getElementById('coin')
 coin.addEventListener('click', () => {
     const flip = Math.random()
@@ -6,21 +6,30 @@ coin.addEventListener('click', () => {
     const coinFlipResult = document.getElementById('coinFlipResult')
     let resultText = String.fromCharCode(160)
     coinFlipResult.innerText = resultText
+    console.log('flip: ' + flip)
     setTimeout(() => {
-        if (flip <= 0.5) {
+        if (flip <= 0.1/*0.495*/) {
             coin.className = 'heads'
             resultText = 'Heads!'
-        } else {
+        } else if (flip >= 0.505) {
             coin.className = 'tails'
             resultText = 'Tails!'
+        } else {
+            coin.className = 'side'
+            resultText = 'Balancing act!'
         }
+
+        let timeout = 2300
+        if (coin.className == 'side') {
+            timeout = 5000
+        }
+        setTimeout(() => {
+            coinFlipResult.innerText = resultText
+        }, timeout)
     }, 10)
-    setTimeout(() => {
-        coinFlipResult.innerText = resultText
-    }, 2300)
 })
 
-/*DICE ROLL*/
+/*ROLL DICE*/
 const diceRollButton = document.getElementById('rollDieButton')
 diceRollButton.addEventListener('click', () => {
     const previousResult = document.getElementById('rollDieResultText')
@@ -54,4 +63,62 @@ diceRollButton.addEventListener('click', () => {
     resultText.innerText = rolls.toString()
 
     document.getElementById('rollDieResult').appendChild(resultText)
+})
+
+/*PICK NUMBER*/
+const pickNumberButton = document.getElementById('pickNumberButton')
+pickNumberButton.addEventListener('click', () => {
+    const previousResult = document.getElementById('pickNumberResultText')
+    if (previousResult != null) {
+        previousResult.remove()
+    }
+
+    let start = document.getElementById('pickNumberStart').value
+    if (start == '') {
+        start = 0
+    }
+    let end = document.getElementById('pickNumberEnd').value
+    if (end == '') {
+        end = 100
+    }
+    start = parseInt(start)
+    end = parseInt(end)
+    if (start > end) {
+        const temp = start
+        start = end
+        end = temp
+    }
+    const randomNumber = Math.floor(Math.random() * (end - start + 1)) + start
+
+    const resultText = document.createElement('p')
+    resultText.id = 'pickNumberResultText'
+    resultText.innerText = randomNumber
+
+    document.getElementById('pickNumberResult').appendChild(resultText)
+})
+
+/*DRAW CARD*/
+const drawCardButton = document.getElementById('drawCardButton')
+drawCardButton.addEventListener('click', () => {
+    const previousResult = document.getElementById('drawCardResultText')
+    if (previousResult != null) {
+        previousResult.remove()
+    }
+
+    const suits = ['clubs', 'diamonds', 'hearts', 'spades']
+    const suit = suits[Math.floor(Math.random() * suits.length)]
+
+    const values = ['Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Jack', 'Queen', 'King', 'Ace']
+    const value = values[Math.floor(Math.random() * values.length)]
+
+    const resultText = document.createElement('p')
+    resultText.id = 'drawCardResultText'
+    resultText.innerText = value + ' of ' + suit
+
+    console.log(Math.random() * 100)
+    if (Math.random() * 100 < 0.1) {
+        resultText.innerText = 'King of kings'
+    }
+
+    document.getElementById('drawCard').appendChild(resultText)
 })

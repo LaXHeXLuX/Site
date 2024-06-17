@@ -23,17 +23,19 @@
             <p id="coinFlipResult">&nbsp;</p>
         </div>
         <div class="random" id="rollDie">
-            <input type="text" id="rollDieInput" placeholder="Amount of dice">
+            <input type="text" id="rollDieInput" placeholder="Amount of dice" style="width: 105px;">
             <button id="rollDieButton">Roll dice!</button>
-            <div id="rollDieResult">
-                
-            </div>
+            <div id="rollDieResult"></div>
         </div>
         <div class="random" id="pickNumber">
-            
+            <div id="pickNumberParameters">
+                <p>Pick a random number between <input type="text" id="pickNumberStart" placeholder="0"> and <input type="text" id="pickNumberEnd" placeholder="100"></p>
+                <button id="pickNumberButton">Pick!</button>
+            </div>
+            <div id="pickNumberResult"></div>
         </div>
         <div class="random" id="drawCard">
-
+            <button id="drawCardButton">Draw a card!</button>
         </div>
     </div>
 </body>
