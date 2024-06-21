@@ -8,7 +8,7 @@ coin.addEventListener('click', () => {
     coinFlipResult.innerText = resultText
     console.log('flip: ' + flip)
     setTimeout(() => {
-        if (flip <= 0.1/*0.495*/) {
+        if (flip <= 0.495) {
             coin.className = 'heads'
             resultText = 'Heads!'
         } else if (flip >= 0.505) {
