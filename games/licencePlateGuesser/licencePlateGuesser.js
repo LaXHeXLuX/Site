@@ -1,5 +1,5 @@
 import { regexes, country, countryDescriptions } from './plateRegexes.js';
-import { makeGrid, makeP, makeImg } from '../../commonTools.js'
+import { makeGrid, makeP, makeImg } from '../../commonTools.js';
 
 function clearPreviousResult() {
     const oldResult = document.getElementById('result');
