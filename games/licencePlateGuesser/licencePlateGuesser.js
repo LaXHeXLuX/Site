@@ -61,6 +61,10 @@ function search(key, el) {
     if (key !== 'Enter') {
         return;
     }
+    if (el.value === '') {
+        alert('Plate number can\'t be empty!');
+        return;
+    }
 
     clearPreviousResult();
     
