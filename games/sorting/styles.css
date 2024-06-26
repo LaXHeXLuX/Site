@@ -1,0 +1,17 @@
+#sorter {
+    width: fit-content;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(240, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+p {
+    margin: 3px;
+}
+
+.element {
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 5px;
+}
